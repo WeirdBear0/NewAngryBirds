@@ -22,7 +22,8 @@ function preload() {
     star1 = loadImage("sprites/star1.png");
     star2 = loadImage("sprites/star2.png");
     star3 = loadImage("sprites/star3.png");
-    dayNight();
+    backgroundImg = loadImage("sprites/bg.png");
+//     dayNight();
 }
 
 function setup(){
@@ -96,9 +97,10 @@ function setup(){
 }
 
 function draw(){
-    if(backgroundImg){
-        background(backgroundImg);
-    }
+//     if(backgroundImg){
+//         background(backgroundImg);
+//     }
+    background(backgroundImg)
   
     Engine.update(engine);
     // console.log(box2.body.position.x);
